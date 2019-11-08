@@ -24,6 +24,29 @@ player = Player("Name", world.startingRoom)
 traversalPath = ['n', 's']
 
 
+# print(player.currentRoom.getExits())
+print('=====',[roomGraph[player.currentRoom.id][1]][-1].values())
+traversalPath = [] #populate with n/s/e/w
+# make a visited rooms set
+visited = set()
+# add room 0 to visited rooms 
+visited.add(0)
+# traverse rooms using dft starting from room 0
+currentRoomID = 0;
+ # checks if any room around hasn't been seen
+ 
+        # mark every room as seen_room
+        # add it to traversal path
+            # goes into first unseen room around after traversing a path
+    # if no more rooms, loop back to the first room with other unseen rooms
+    # use bfs to get from the dead end to the room with unexplored rooms if we can
+    # mark every room it went throught as seen
+
+        # get (directions it went back through, destination room) or None
+    # if can't trace back, don't add to path
+    
+
+
 # TRAVERSAL TEST
 visited_rooms = set()
 player.currentRoom = world.startingRoom
